@@ -1,11 +1,17 @@
 <template>
+
     <div class="app">
-        <Tweet />
+        <!-- <Tweet :tweetHijo = 'tweets' :otraInfoQuemMeLlegaDelPadre='2'/> -->
+       <Tweet :tweetHijo="tweets"/>
+       
+
     </div>
 </template>
   
 <script setup>
+
 import Tweet from './components/Tweet.vue';
+
 const tweets = [
     {
         user: {
